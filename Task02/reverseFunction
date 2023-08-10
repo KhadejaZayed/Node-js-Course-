@@ -1,0 +1,10 @@
+let word = prompt('Enter the word : ');
+let wordArr = word.split('');
+let reversedArr =[];
+
+for(let i in wordArr){
+    reversedArr.unshift(wordArr[i]);    
+}
+
+let reversedWord =reversedArr.join('');
+console.log(reversedWord);
