@@ -19,3 +19,5 @@ var Circle = /** @class */ (function () {
     };
     return Circle;
 }());
+var c1 = new Circle(1.0);
+console.log(c1.toString());
