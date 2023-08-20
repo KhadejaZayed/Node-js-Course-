@@ -27,7 +27,7 @@ var Rectangle = /** @class */ (function () {
         return this.length * this.width;
     };
     Rectangle.prototype.getPerimeter = function () {
-        return this.length * this.width;
+        return 2* this.length + 2* this.width;
     };
     Rectangle.prototype.toString = function () {
         return "Rectangle Length is ".concat(this.length, " \nRectangle Width is ").concat(this.width);
