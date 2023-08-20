@@ -25,3 +25,6 @@ class Circle{
         return `Radious: ${this.radious}\nCircumference: ${this.getCircumference()}\nArea: ${this.getArea()}`
     }
 }
+
+const c1= new Circle(1.0);
+console.log(c1.toString());
