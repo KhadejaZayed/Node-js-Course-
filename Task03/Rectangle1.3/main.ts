@@ -29,7 +29,7 @@ class Rectangle {
     }
 
     getPerimeter(): number{
-        return this.length * this.width;
+        return 2*this.length + 2*this.width;
     }
 
     toString() : String{
