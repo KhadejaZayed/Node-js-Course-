@@ -1,0 +1,31 @@
+//Answer is B
+
+
+// A
+const add = (x, y, callback) => {
+  setTimeout(() => {
+    callback(x + y);
+  }, 2);
+};
+
+// B
+const add = (x, y, callback) => {
+  setTimeout(() => {
+    callback(x + y);
+  }, 2000);
+};
+
+// C
+const add = (x, y, callback) => {
+  setTimeout(() => {
+    callback(x + y, 2);
+  });
+};
+
+// D
+const add = (x, y, callback) => {
+  setTimeout(() => {
+    callback(x + y, 2000);
+  });
+};
+
