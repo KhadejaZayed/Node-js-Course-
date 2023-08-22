@@ -1,0 +1,156 @@
+Javascript Exam
+Question1:
+1-What do you understand by hoisting in JavaScript?
+	a:making the declaration at the top.
+2-Why is super used in JavaScript?
+	a:To use a member of parent class in a child class.
+3- What is let and const? And how it differs from var?
+	a:let is for changing variables, const is for constants, both of them are local, var is global.
+4- Discuss the Rest parameter in ES6 What is Arrow function?
+What are all its uses? How it differs from normal function?
+	a:Arrow function is a shorthand function takes parameter and returns a value,..., it is stored in variable and has different syntax.
+
+Question2:
+1- Encapsulation is a mechanism which represent the essential
+features without including implementation details.
+	False
+2- Encapsulation lets you focus on what the object does instead of
+how it does it
+	False
+3- Abstraction means hiding the internal details or mechanics of
+how an object does something
+	False
+4- Overriding happens at compile-time
+	False
+5- Overloading happens at runtime
+	False
+6- Static binding is being used for overloaded methods and dynamic
+binding is being used for overridden/overriding method
+	True
+7- binding object state(fields) and behavior(methods) together. If
+you are creating class, you are doing encapsulation.
+	True
+8- Polymorphism is a object oriented programming feature that
+allows us to perform a single action in different ways.
+	True
+	
+Question 3:
+1- JavaScript is ……
+1) synchronous, blocking, single-threaded language.
+2) asynchronous, non-blocking, single-threaded language.
+3) synchronous, blocking, multi-threaded language.
+4) asynchronous, non-blocking, multi-threaded language
+	a:2
+
+2- is the concept of object-oriented programming used to hide
+the internal representation, or state, of an object from the
+outside
+1) Inheritance
+2) Encapsulation
+3) Abstraction
+4) Inheritance
+	a:2
+
+Question 4 :Output Of Blocks Of Code
+1) 
+The Fails!
+The Fails!
+
+2) 'Lydia Hallie'
+
+3) 6
+8
+
+4)Error newColor in not defined
+
+5)boolean
+string
+
+6)0
+1
+2
+3
+4
+
+7)undefined?
+
+8)'hello world'
+10
+
+9)[93,83.7,59.52]
+
+10)[['batman','catwoman'],'bane']
+
+Question 5:
+1- Write a function that returns the length of a string. Make your
+function recursive.
+a:
+let word =prompt('Enter a word: d');
+word= word.split('');
+var count=0;
+
+function getLength(w){
+    if(w[count]!=null){
+    count++;
+    return getLength(w);
+    }
+    return count;
+}
+
+console.log(getLength(word));
+
+2- Write a program that prints a multiplication table for numbers
+up to 12. Expected Output :
+12 * 1 = 12 ============ 12 * 12 = 144 
+a:
+for(let i=1; i<=12;i++){
+    console.log(`${i}*12= ${i*12}`);             
+}     
+
+3- Write a function that returns the elements on odd positions in
+a list.
+a:
+let list =[10,11,12,13,14,15,16,17,18,19];
+function returnOddPositionElements(list){
+    let result=[];
+    for(let i=1; i<list.length;i++){
+        if(i%2==1){
+            result.push(list[i]);
+        }
+    }
+    return result;
+}
+
+console.log(returnOddPositionElements(list));
+
+4- Check If The Number Is Prime Or Not . [5 points]
+a:
+function isPrime(num){
+    for(let i=2; i<num;i++){
+        if(num%i==0){
+            return `${num} is not a prime number`;
+        }
+    }
+    return `${num} is a prime number`;
+}
+
+console.log(isPrime(19));
+
+6- Write a short javascript function that counts the number of
+vowels in a given character string . [12 points]
+a:
+let word =prompt('Enter a word: d');
+
+function numOfVowel(word){
+    word= word.split('');
+    let count=0;
+    for(let i of word){
+        if(i=='a'||i=='A'||i=='e'||i=='E'||i=='i'||i=='A'||i=='I'||i=='o'||i=='O'||i=='u'||i=='U'){
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(numOfVowel(word));
+
