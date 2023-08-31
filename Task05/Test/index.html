@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+        th,td{
+            padding: 10px;
+            text-align: center;
+        }
+        .warning{
+            background-color: rgb(218, 40, 40);
+            padding: 2%;
+            width: 50%;
+        }
+        .success{
+            background-color: rgb(10, 163, 43);
+            padding: 2%;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h3>Course App</h3>
+    <form>
+        <div id="firstDiv">
+            <label for="courseTitle">Course Title</label>  <br> 
+            <input  id="courseTitle" type="text"> 
+        </div>
+        <div>  
+            <label for="price">Price</label> <br>
+            <input id="price" type="text" >
+        </div>
+        <div>
+            <label for="instructor">Instructor</label> <br>
+            <input id="instructor" type="text">
+        </div>
+        <div>
+            <label for="description">Description</label> <br>
+            <textarea id="description"></textarea> 
+        </div>
+        <input type="submit" value="Add Course">
+        <div>
+            <table border=" 2px solid">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Instructor</th>
+                        <th>Description</th>
+                        <th>Delet The Record</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
