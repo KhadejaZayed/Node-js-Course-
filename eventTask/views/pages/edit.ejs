@@ -1,0 +1,16 @@
+<h2>Edit an event</h2>
+<form action="/update/<%= event._id %>" method="post">
+    <div>
+        <label for="title">Title:</label> <br>
+        <input type="text" name="title" id="title" value="<%= event.title %>">
+    </div>
+    <div>
+        <label for="price">Price:</label> <br>
+        <input type="text" name="price" id="price" value="<%= event.price %>">
+    </div>
+    <div>
+        <label for="description">Description:</label> <br>
+        <textarea name="description" id="description"><%= event.description %></textarea>
+    </div>
+    <input type="submit" value="Edit Event">
+</form>
