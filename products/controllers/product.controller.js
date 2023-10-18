@@ -22,7 +22,6 @@ function getProduct(req, res){
 function storeProduct(req, res){
     try{
     const product = new Product({
-        _id : new mongoose.Types.ObjectId(),
         title : req.body.title,
         price : req.body.price
     });
